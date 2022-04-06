@@ -23,7 +23,12 @@ public class Ejercicio_7 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (num1 < 0 && num2 < 0 && num3 < 0)
+        {
+            Debug.Log("Ingrese un numero entero");
+        }
+        else
+        { 
         if (num1 > num2 && num1 > num3)
         {
            
@@ -43,7 +48,7 @@ public class Ejercicio_7 : MonoBehaviour
         {
             Debug.Log("Los numeros son iguales");
         }
-
+        }
     }
 
     // Update is called once per frame
